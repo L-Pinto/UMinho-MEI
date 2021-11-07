@@ -1,6 +1,12 @@
 ### :pushpin: Formal Methods in Software Engineering
 
 ***About*** : 
+TPC1 - SAT Solving
+TPC2 - SMT Solving
+TPC3 - Alloy
+TPC4 - Frama-C
+
+
 
 ***Final Grade*** : 
 
