@@ -8,14 +8,14 @@
 ### :books: FIRST YEAR :books:	      2021 / 2022 EDITION
 
 #### :wavy_dash: First Semester :wavy_dash:
-:white_medium_square: [ **--/20** ] - [Parallel Computing](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/CP)
+:white_medium_square: [ **17/20** ] - [Parallel Computing](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/CP)
 
-:white_medium_square: [ **--/20** ] - [Cloud Computing Applications and Services](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/ASCN)
+:white_medium_square: [ **15/20** ] - [Cloud Computing Applications and Services](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/ASCN)
 
-:white_medium_square: [ **--/20** ] - [Data and Machine Learning](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/DAA)
+:white_medium_square: [ **17/20** ] - [Data and Machine Learning](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/DAA)
 
 :white_medium_square: [ **--/20** ] - [Network Services Engineering](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/ESR)
 
 :white_medium_square: [ **--/20** ] - [Formal Methods in Software Engineering](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/MFES)
 
-:white_medium_square: [ **--/20** ] - [Software Requirements and Architectures](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/RAS)
+:white_medium_square: [ **17/20** ] - [Software Requirements and Architectures](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/RAS)
