@@ -19,3 +19,16 @@
 :white_medium_square: [ **16/20 , 20/20 , 20/20 , 20/20 , 20/20** ] - [Formal Methods in Software Engineering](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/MFES)
 
 :white_medium_square: [ **17/20** ] - [Software Requirements and Architectures](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/RAS)
+
+#### :wavy_dash: Second Semester :wavy_dash:
+:white_medium_square: [ **--/--** ] - [Deep Learning](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/DL)
+
+:white_medium_square: [ **--/--** ] - [Sensorization and Environment](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/S&A)
+
+:white_medium_square: [ **--/--** ] - [Agents and Multi-agent Systems](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/SMA)
+
+:white_medium_square: [ **--/--** ] - [Big Data](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/BD)
+
+:white_medium_square: [ **--/--** ] - [NoSQL Databases](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/NBD)
+
+:white_medium_square: [ **--/--** ] - [Data Mining](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/DM)
