@@ -16,6 +16,6 @@
 
 :white_medium_square: [ **--/20** ] - [Network Services Engineering](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/ESR)
 
-:white_medium_square: [ **--/20** ] - [Formal Methods in Software Engineering](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/MFES)
+:white_medium_square: [ **16/20 , 20/20 , 20/20 , 20/20 , 20/20** ] - [Formal Methods in Software Engineering](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/MFES)
 
 :white_medium_square: [ **17/20** ] - [Software Requirements and Architectures](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/RAS)
