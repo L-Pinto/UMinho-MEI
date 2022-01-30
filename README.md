@@ -29,6 +29,6 @@
 
 :white_medium_square: [ **--/--** ] - [Big Data](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/BD)
 
-:white_medium_square: [ **--/--** ] - [NoSQL Databases](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/NBD)
+:white_medium_square: [ **--/--** ] - [NoSQL Databases](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/BDN)
 
 :white_medium_square: [ **--/--** ] - [Data Mining](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/DM)
