@@ -1,12 +1,16 @@
 ### :pushpin: Formal Methods in Software Engineering
 
 ***About*** : 
+
 TPC1 - SAT Solving
+
 TPC2 - SMT Solving
-TPC3 - Alloy
-TPC4 - Frama-C
 
+TPC3 - Structural modeling with Alloy
 
+TPC4 - Behavioral modeling with Alloy: Eulerian circuits
+
+TPC5 - Warshall Algorithm Verification with Frama-C
 
 ***Final Grade*** : 
 
