@@ -1,6 +1,6 @@
 ### :pushpin: Formal Methods in Software Engineering
 
-***About*** : 
+***About*** : In the scope of Formal Methods, developed 5 projects :
 
 TPC1 - SAT Solving
 
