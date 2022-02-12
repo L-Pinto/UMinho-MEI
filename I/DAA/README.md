@@ -2,6 +2,8 @@
 
 ***About*** : 
 
+<!-- 2 Datasets : Competição Kaggle e Stroke prediction. Ferramentas utilizadas(Jupiter Notebook, Anaconda) e conceitos como Machine Learning  -->
+
 ***Final Grade*** : 17 / 20
 
 #### :handshake: Contributors 
