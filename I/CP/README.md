@@ -2,7 +2,8 @@
 
 ***About*** : 
 
-<!-- Two versions of the BucketSort Algorithm : sequential and parallel (with OpenMP). Ferramentas utilizadas e técnicas utilizadas benchmark, performance, e conhcecimentos obtidos em temáticas -->
+<!-- Two versions of the BucketSort Algorithm : sequential and parallel (with OpenMP). Ferramentas utilizadas e técnicas utilizadas benchmark, performance, e conhcecimentos obtidos em temáticas.
+ -->
 
 ***Final Grade*** : 17 / 20
 
