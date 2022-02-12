@@ -1,0 +1,47 @@
+http://alloy4fun.inesctec.pt/u4iawFPfMbSWeYeLB 
+
+sig Hash {}
+abstract sig Object {
+	hash : one Hash
+}
+
+sig Blob extends Object {}
+
+sig Name {}
+sig Tree extends Object {
+	objects : Hash -> Name
+}
+
+sig Commit extends Object {
+	tree : one Hash,
+	parent : set Hash
+}
+
+pred Invs {
+  
+    // 1 Uma arvore não pode ter objetos diferents com o mesmo nome
+    //all t : Tree, h1,h2 : Hash, n : Name  | h1->n in t.objects and h2->n in t.objects implies h1 = h2 //sol.1
+    all t : Tree, n : Name | lone t.objects.n //solução 2
+  
+    // 2 Cada objeto tem um unico hash
+    all h : Hash | lone hash.h 
+
+    // 3 Uma tree tem como objetos blobs ou outras trees 
+    all t : Tree | t.objects.Name in (Blob+Tree).hash
+  
+    // 3 relaçao tree sobre hashs de Tree & relaçao parent sobre hashs de Commit 
+    all c : Commit | (c.tree in Tree.hash) and (c.parent in Commit.hash)
+    
+    // 4 Commit não pode estar contido nos parents
+    all c : Commit | c not in c.^(parent.~hash)
+  
+    // 4 Tree não pode estar contida nos seus objetos
+    all t : Tree | t not in t.^(objects.Name.~hash)
+  
+    // 5 Trees iguais tem os mesmos objetos
+    all t1,t2 : Tree | t1.objects = t2.objects implies t1=t2
+ 
+    // 5 Commits iguais tem igual tree e parents
+    all c1,c2 : Commit | (c1.tree = c2.tree) and (c1.parent = c2.parent) implies c1 = c2
+     
+}
