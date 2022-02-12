@@ -2,6 +2,8 @@
 
 ***About*** : 
 
+<!-- Ferramentas usadas GKE ... kubernetes... wikijs... e conceitos e temas importantes aprendidos -->
+
 ***Final Grade*** : 15 / 20
 
 #### :handshake: Contributors 
