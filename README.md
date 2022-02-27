@@ -22,7 +22,7 @@
 
 #### :wavy_dash: Second Semester :wavy_dash:
 
-Specialization  : Smart Systems
+Specialization  : Smart Systems 🧠
 
 :white_medium_square: [ **--/--** ] - [Deep Learning](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/DL)
 
@@ -30,7 +30,7 @@ Specialization  : Smart Systems
 
 :white_medium_square: [ **--/--** ] - [Agents and Multi-agent Systems](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/SMA)
 
-Specialization  : Knowledge Engineering
+Specialization  : Knowledge Engineering 📊
 
 :white_medium_square: [ **--/--** ] - [Big Data](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/BD)
 
