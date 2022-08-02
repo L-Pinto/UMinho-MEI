@@ -2,15 +2,15 @@
 
 ***About*** : In the scope of Formal Methods, developed 5 projects :
 
-TPC1 - SAT Solving
+  - TPC1 - SAT Solving
 
-TPC2 - SMT Solving
+  - TPC2 - SMT Solving
 
-TPC3 - Structural modeling with Alloy
+  - TPC3 - Structural modeling with Alloy
 
-TPC4 - Behavioral modeling with Alloy: Eulerian circuits
+  - TPC4 - Behavioral modeling with Alloy: Eulerian circuits
 
-TPC5 - Warshall Algorithm Verification with Frama-C
+  - TPC5 - Warshall Algorithm Verification with Frama-C
 
 ***Final Grade*** : 
   - First Project  : 16 / 20
