@@ -1,8 +1,6 @@
 ### :pushpin: Data and Machine Learning
 
-***About*** : 
-
-<!-- 2 Datasets : Competição Kaggle e Stroke prediction. Ferramentas utilizadas(Jupiter Notebook, Anaconda) e conceitos como Machine Learning  -->
+***About*** : Analysis of two datasets - one for Traffic Flow Prediction (Kaggle Competition) and another for Stroke Prediction. Development and optimization of machine learning models.
 
 ***Final Grade*** : 17 / 20
 
