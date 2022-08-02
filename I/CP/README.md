@@ -1,6 +1,6 @@
 ### :pushpin: Parallel Computing
 
-***About*** : Implementation of two versions of the BucketSort Algorithm : sequential and parallel (with OpenMP). Followed by an evaluation and comparison of both versions with benchmarking and performance tools. This project was written in C. 
+***About*** : Implementation of Two versions of the BucketSort Algorithm : sequential and parallel (with OpenMP). Followed by an evaluation and comparison of both versions with benchmarking and performance tools. This project was written in C. 
 
 ***Final Grade*** : 17 / 20
 
