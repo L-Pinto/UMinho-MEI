@@ -1,8 +1,6 @@
 ### :pushpin: Cloud Computing Applications and Services
 
-***About*** : 
-
-<!-- Ferramentas usadas GKE ... kubernetes... wikijs... e conceitos e temas importantes aprendidos -->
+***About*** : Deployment of wiki-js using Google Cloud Platform. 
 
 ***Final Grade*** : 15 / 20
 
