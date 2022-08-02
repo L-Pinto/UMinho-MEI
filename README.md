@@ -37,3 +37,12 @@
 :white_medium_square: [ **16/20** ] - [NoSQL Databases](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/BDN)
 
 :white_medium_square: [ **15/20** ] - [Data Mining](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/DM)
+
+
+***
+
+### :books: SECOND YEAR :books:	      2022 / 2023 EDITION
+
+#### :wavy_dash: First Semester :wavy_dash:
+
+#### :wavy_dash: Second Semester :wavy_dash:
