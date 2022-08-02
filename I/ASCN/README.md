@@ -1,6 +1,6 @@
 ### :pushpin: Cloud Computing Applications and Services
 
-***About*** : Deployment of wiki-js using Google Cloud Platform. 
+***About*** : Deployment of Wiki.Js using Google Cloud Platform.
 
 ***Final Grade*** : 15 / 20
 
