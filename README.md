@@ -26,9 +26,10 @@
 
 :white_medium_square: [ **17/20 , 19/20** ] - [Agents and Multi-agent Systems](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/SMA)
 
+:white_medium_square: [ **17/20 , 14/20** ] - [Deep Learning](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/DL)
+
 :white_medium_square: [ **18/20 , 18/20** ] - [Sensorization and Environment](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/S&A)
 
-:white_medium_square: [ **17/20 , 14/20** ] - [Deep Learning](https://github.com/L-Pinto/UMinho-MEI/tree/main/II/DL)
 
 
 📊 Specialization  : Knowledge Engineering
