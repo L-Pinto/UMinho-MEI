@@ -14,7 +14,7 @@
 
 :white_medium_square: [ **17/20** ] - [Data and Machine Learning](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/DAA)
 
-:white_medium_square: [ **--/20** ] - [Network Services Engineering](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/ESR)
+:white_medium_square: [ **18/20 , 16/20 , 17/20** ] - [Network Services Engineering](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/ESR)
 
 :white_medium_square: [ **16/20 , 20/20 , 20/20 , 20/20 , 20/20** ] - [Formal Methods in Software Engineering](https://github.com/L-Pinto/UMinho-MEI/tree/main/I/MFES)
 
