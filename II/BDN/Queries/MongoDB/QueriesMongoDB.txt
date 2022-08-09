@@ -1,0 +1,92 @@
+QUERY 1 -- Listar o número de departamentos em cada país
+
+db.departments.aggregate( [{$group: {_id : "$Country",'count' : {$sum:1}}}, { $sort: {count : -1} }])
+
+
+QUERY 2 -- Listar o número de employees em cada país
+
+db.departments.aggregate([
+{
+  "$project":{
+    Country : 1,
+    "employees_count":{
+      "$sum":{
+        "$map":{
+          "input":"$Jobs",
+          "in":{"$size": {"$ifNull": ["$$this.Employees", []] }}
+        }
+      }
+    }
+  }
+},
+{ "$group":  {_id : "$Country", 'count' : {$sum:"$employees_count"}}
+},
+{ $sort: {count : -1} }])
+
+
+QUERY 3 -- Pessoa que ganha mais
+
+db.departments.aggregate([{$unwind : "$Jobs"},{$unwind : "$Jobs.Employees"},{$match : {"Jobs.Employees.Salary": maxSalary}},{$group:{_id:{First_name: "$Jobs.Employees.First Name",Last_Name:"$Jobs.Employees.Last Name",Job:"$Jobs.Title", Salary : "$Jobs.Employees.Salary"}}}]).pretty();
+
+
+QUERY 4 -- Pessoa que ganha menos
+
+db.departments.aggregate([{$unwind : "$Jobs"},{$unwind : "$Jobs.Employees"},{$match : {"Jobs.Employees.Salary": minSalary}},{$group:{_id:{First_name: "$Jobs.Employees.First Name",Last_Name:"$Jobs.Employees.Last Name",Job:"$Jobs.Title", Salary : "$Jobs.Employees.Salary"}}}]).pretty();
+
+
+QUERY 5 -- Pessoa há mais tempo na empresa
+
+ db.departments.aggregate([{$unwind : "$Jobs"},{$unwind : "$Jobs.Employees"},{$match : {"Jobs.Employees.Hire Date": oldest}},{$group:{_id:{First_name: "$Jobs.Employees.First Name",Last_Name:"$Jobs.Employees.Last Name",Job:"$Jobs.Title", "Hire Date" : "$Jobs.Employees.Hire Date"}}}]).pretty();
+
+
+Query 6 -- Pessoa há menos tempo na empresa
+
+db.departments.aggregate([{$unwind : "$Jobs"},{$unwind : "$Jobs.Employees"},{$match : {"Jobs.Employees.Hire Date": recent}},{$group:{_id:{First_name: "$Jobs.Employees.First Name",Last_Name:"$Jobs.Employees.Last Name",Job:"$Jobs.Title", "Hire Date" : "$Jobs.Employees.Hire Date"}}}]).pretty();
+
+
+QUERY 7 -- Ordenar a profissão pelo número de employees
+
+db.departments.aggregate([
+{$unwind:"$Jobs"},
+{
+ $group: {
+	_id : "$Jobs.Title", 
+	'count' : 
+          {"$sum":{"$size": {"$ifNull": ["$Jobs.Employees", []] }}}
+} 
+}, 
+{ $sort: {count : -1} }
+])
+
+
+Querie 8 -- Listar o número de pessoas que trabalham em cada departamento por odem
+
+db.departments.aggregate( [ 
+    { $project : 
+        { _id: 0, department: "$Department", JobsEmployee:
+                                { $reduce: 
+                                    { input: "$Jobs.Employees.Email", initialValue: [ ], in: { $concatArrays: [ "$$value", "$$this" ] } } } } },
+    { $group: { _id: "$department", numberEmployees: { $sum: { $size: { $ifNull: ["$JobsEmployee", []] } } } } },
+    { $sort: {numberEmployees: -1} }
+])
+
+
+Querie 9 -- Listar Salário médio por departamento
+
+db.departments.aggregate([{$project: { _id :0, department : "$Department", salaries: 
+{ $reduce:  { input: "$Jobs.Employees.Salary", initialValue: [ ], in: { $concatArrays: [ "$$value", "$$this" ] } } }} }, 
+{ $project: { _id :0 , Departamento : "$department", Media : { $avg: "$salaries" } } }, 
+{ $sort: {Media: 1} },  {"$match": { "Media" :{ "$ne" : null } } } ])
+
+
+Querie 10 -- Listar o histórico de cada employee
+
+db.departments.aggregate( [
+    {$unwind: "$Historic"},
+    { $project : { _id: 0, "First Name": "$Historic.First Name",  "Last Name": "$Historic.Last Name", "Department where the employee worked": "$Department", "Past Jobs": "$Historic.Worked in"}}
+]).pretty()
+
+
+Querie 11 -- Listar Slário médio por profissão
+
+db.departments.aggregate([{$unwind : "$Jobs"},{$project: { _id :1 , Profissão : "$Jobs.Title" , Media : { $avg : "$Jobs.Employees.Salary"}}}, { $sort: {Media: 1} } ])

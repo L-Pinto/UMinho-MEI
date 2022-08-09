@@ -1,0 +1,76 @@
+QUERY 1 -- Listar o número de departamentos em cada país
+
+MATCH (d:Department)-[r:Has_Location]->(l:Location)-[r1:Has_Country]->(c:Country)
+RETURN c.name AS Country, count(d) AS TOTAL
+ORDER BY TOTAL DESC
+
+
+QUERY 2 -- Listar o número de employees em cada país
+
+MATCH (e:Employee)-[w:Works]->(d:Department)-[r:Has_Location]->(l:Location)-[r1:Has_Country]->(c:Country)
+RETURN c.name AS Country, count(e) AS TOTAL
+ORDER BY TOTAL DESC
+
+
+QUERY 3 -- Pessoa que ganha mais
+
+MATCH (e:Employee)
+WITH MAX (e.salary) AS max
+MATCH (e:Employee)-[:Has_Job]->(j:Job) WHERE e.salary = max
+RETURN e.first_name AS FIRST_NAME, e.last_name AS LAST_NAME,e.salary AS SALARY, j.title AS JOB_TITLE
+
+
+QUERY 4 -- Pessoa que ganha menos
+
+MATCH (e:Employee)
+WITH MIN (e.salary) AS min
+MATCH (e:Employee)-[:Has_Job]->(j:Job) WHERE e.salary = min
+RETURN e.first_name AS FIRST_NAME, e.last_name AS LAST_NAME,e.salary AS SALARY, j.title AS JOB_TITLE
+
+
+QUERY 5 -- Pessoa há mais tempo na empresa
+
+MATCH (e:Employee)
+WITH MAX (e.date_hired) AS max
+MATCH (e:Employee) WHERE e.date_hired = max
+RETURN e.first_name as FIRST_NAME , e.last_name as LAST_NAME , e.date_hired AS DATE_HIRED,duration.inMonths(e.date_hired, date()).months/12 AS NR_WORKING
+
+Query 6 -- Pessoa há menos tempo na empresa
+
+MATCH (e:Employee)
+WITH MIN (e.date_hired) AS min
+MATCH (e:Employee) WHERE e.date_hired = min
+RETURN e.first_name as FIRST_NAME , e.last_name as LAST_NAME , e.date_hired AS DATE_HIRED,duration.inMonths(e.date_hired, date()).months/12 AS NR_WORKING
+
+QUERY 7 -- Ordenar a profissão pelo número de employees
+
+MATCH (e:Employee)-[r:Has_Job]->(j:Job)
+RETURN j.title AS Job, count(e) AS TOTAL
+ORDER BY TOTAL DESC
+
+
+Querie 8 -- Listar o número de pessoas que trabalham em cada departamento por odem
+
+MATCH ()-[w:Works*0..1]->(d:Department)
+RETURN DISTINCT d.name AS DEPARTMENT_NAME, COUNT(*)-1 AS NR_EMPLOYEES
+ORDER BY NR_EMPLOYEES DESC
+
+
+Querie 9 -- Listar Salário médio por departamento
+
+MATCH (e:Employee)-[:Works]->(d:Department)
+RETURN d.name as Department, AVG(e.salary) as Salary 
+ORDER BY Salary ASC
+
+
+Querie 10 -- Listar o histórico de cada employee
+
+MATCH (e:Employee)-[w:Worked]->(d:Department)
+RETURN e.first_name AS Employee_Name, e.last_name As Employee_Surname, w.start_date AS Start_Date, w.end_date AS End_Date, w.job_name AS Job, d.name AS Department
+
+
+Querie 11 -- Listar Slário médio por profissão
+
+MATCH (e:Employee)-[]->(j:Job)
+RETURN j.title as Job, AVG(e.salary) as Salary 
+ORDER BY Salary ASC
