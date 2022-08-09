@@ -1,15 +1,6 @@
 ### :pushpin: Data Mining
 
-***About*** : 
-
-<!--
-In this subject we developed 2 projects and 4 weekly projects.
-
-  - The first project consisted in writting a structured summary and a critical analysis about a data minning article.
-  - The second project consisted in developing an entire data analysis process of a dataset.
-  - Homeworks : xor algorithm, naive bayes, decision trees, pca cluster.
-
--->
+***About*** : The first project consisted in writing a structured summary and a critical analysis of a data mining article. The second project consisted in developing an entire data analysis process of a dataset. Weekly projects revolved around concepts such as naive bayes, prism classifier, PCA and other algorithms.
 
 ***Final Grade*** : 15 / 20
 
