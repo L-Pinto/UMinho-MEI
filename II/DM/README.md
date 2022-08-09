@@ -2,7 +2,7 @@
 
 ***About*** : 
 
-***Final Grade*** : 
+***Final Grade*** : 15 / 20
 
 #### :handshake: Contributors 
 - [Luís Pinto](https://github.com/L-Pinto)
