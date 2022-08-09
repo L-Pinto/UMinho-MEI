@@ -1,0 +1,1 @@
+Nesta pasta encontravam-se os ficheiros secretos de cada membro do grupo, que contêm as credenciais do Firebase, daí não poderem ser partilhados.
