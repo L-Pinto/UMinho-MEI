@@ -3,6 +3,8 @@
 ***About*** : 
 
 ***Final Grade*** : 
+  - Research Project : 18 / 20
+  - Group Project  : 18 / 20
 
 #### :handshake: Contributors 
 - [Luís Pinto](https://github.com/L-Pinto)
