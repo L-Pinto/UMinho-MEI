@@ -1,6 +1,6 @@
 ### :pushpin: Agents and Multi-agent Systems
 
-***About*** : 
+***About*** : To be completed.
 
 ***Final Grade*** : 
   - Research Project : 17 / 20
