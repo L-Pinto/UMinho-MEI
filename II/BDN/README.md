@@ -1,6 +1,6 @@
 ### :pushpin: NoSQL Databases
 
-***About*** : 
+***About*** : The project consisted in analysing, planning, and implementing one Relational and two Non-Relational DBMS (database management systems). The final report compares the implementations between the 3 DBMS.
 
 ***Final Grade*** : 16 / 20
 
