@@ -2,6 +2,8 @@
 
 ***About*** : 
 
+<!-- bla bla  -->
+
 ***Final Grade*** : 15 / 20
 
 #### :handshake: Contributors 
