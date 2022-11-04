@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item1"
+        android:title="Statistics"
+        android:icon="@drawable/ic_stats"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/item2"
+                    android:title="Sleep Cycle"/>
+                <item
+                    android:id="@+id/item3"
+                    android:title="Activity Chart" />
+                <item
+                    android:id="@+id/item4"
+                    android:title="Rating Chart" />
+                <item
+                    android:id="@+id/item5"
+                    android:title="Rating Bars" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/item6"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="ifRoom"
+    />
+
+
+</menu>

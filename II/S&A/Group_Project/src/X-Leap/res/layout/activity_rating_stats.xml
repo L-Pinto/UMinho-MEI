@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rating_StatsActivity">
+
+    <!--Ui component for our bar chart-->
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/idBarChart"
+        android:layout_width="320dp"
+        android:layout_height="550dp"
+        android:translationY="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <TextView
+        android:id="@+id/title_bar"
+        android:layout_width="361dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="59dp"
+        android:text="Your Rating Distribution"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yTitle"
+        android:layout_width="191dp"
+        android:layout_height="314dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="244dp"
+        android:rotation="270"
+        android:text="No. of Ratings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationX="-335dp"
+        android:translationY="-130dp"
+        app:layout_constraintStart_toEndOf="@+id/idBarChart"
+        app:layout_constraintTop_toTopOf="@id/xTitle" />
+
+    <TextView
+        android:id="@+id/xTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="40dp"
+        android:text="Rating (1-10)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationX="-260dp"
+        android:translationY="10dp"
+        app:layout_constraintStart_toEndOf="@+id/idBarChart"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

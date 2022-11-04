@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line_chart"
+        android:layout_width="334dp"
+        android:layout_height="535dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:translationX="30dp"
+        android:translationY="-640dp" />
+
+    <TextView
+        android:id="@+id/xTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationX="180dp"
+        android:translationY="-30dp" />
+
+    <TextView
+        android:id="@+id/yTitle"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:rotation="270"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationX="-140dp"
+        android:translationY="-500dp" />
+
+
+</LinearLayout>
