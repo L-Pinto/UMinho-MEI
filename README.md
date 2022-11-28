@@ -47,6 +47,7 @@
 
 #### :wavy_dash: First Semester :wavy_dash:
 :white_medium_square: **StartUp Project - PlannerUp** 💡🔝🚀
+
 :white_medium_square: **Master's Dissertation (Pre-Thesis)**
 
 #### :wavy_dash: Second Semester :wavy_dash:
