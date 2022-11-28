@@ -46,7 +46,8 @@
 ### :books: SECOND YEAR :books:	      2022 / 2023 EDITION
 
 #### :wavy_dash: First Semester :wavy_dash:
-:white_medium_square: **StartUp Project - PlannerUp** 
+:white_medium_square: **StartUp Project - PlannerUp** 💡🔝🚀
+:white_medium_square: **Master's Dissertation (Pre-Thesis)**
 
 #### :wavy_dash: Second Semester :wavy_dash:
-:white_medium_square: **TBA** 
+:white_medium_square: **Master's Dissertation** 
